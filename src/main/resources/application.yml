@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:8080"
+            allowedHeaders: "*"
+            Access-Control-Allow-Credentials: true
+            allowedMethods:
+              - GET
+              - POST
+              - DELETE
+              - PUT
